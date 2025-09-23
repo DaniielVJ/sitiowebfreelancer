@@ -138,6 +138,45 @@
     <section id="contacto">
         <!-- Ultima seccion del sitio web para contactarnos -->
         <h2>Contacto</h2>
+        <!-- Definimos un formulario en la pagina web -->
+        <form>
+            <!-- Todos los campos agrupados aqui son parte del formulario y los datos agregados aqui pueden ser usados para enviarlos a un servidor -->
+            <fieldset>
+                <!-- Agrupamos todos los campos comunes a un formulario -->
+                <legend>Rellena todos los campos</legend> <!--Indicamos que tipo de informacion va en esta parte del formulario o fieldset-->
+                
+                <!-- Cada campo debe ser agrupado | cada campo es un div con label y elemento que permita al usuario ingresar datos-->
+                <div>
+                    <!-- Usamos para dar la indicacion -->
+                    <label>Nombre</label>
+                    <!-- Elemento para que el usuario proporcione datos al formulario -->
+                    <input type="text" placeholder="Tu Nombre Aquí"/>    
+                </div>
+
+                <div>
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="Tu Teléfono Aquí"/>
+                </div>
+                
+                <div>
+                    <label>Email</label>
+                    <input type="email" placeholder="Tu Email Aquí"/>
+                </div> 
+
+                <div>
+                    <label>Mensaje</label>
+                    <textarea placeholder="Escribe la razón de contacto"></textarea>
+                </div>
+
+                <div>
+                    <!-- El boton es el que le dice al formulario que deben enviarse los datos al servidor -->
+
+                    <!-- Añadimos un boton, es un input de tipo submit -->
+                     <input type="submit" value="Enviar"/>
+                </div>
+            </fieldset>
+        </form>
+
     </section>
    
 
