@@ -1,10 +1,22 @@
+/* pseudoselector, no existe en el html como tal */
+:root {
+    /* Creamos nuestra paleta de colores de la pagina web */
+    --blanco: #ffffff; /*definimos variables en css*/
+    --oscuro: #212121;
+    --primario: #ff9500;
+    --secundario: #0097a7;
+    --gris: #757575;
+    /* Se puede guardar cualquier valor que vayamos a reutilizar en el codigo */
+    --fuente: 1.2rem;
+}
+
+
 /* 
 rem le dice al navegador el tamaño relativo de un elemento,
 y él calcula los píxeles según el dispositivo para mantener la proporción.
 esta unidad de medida es relativa al elemento root (html) que por defecto son 16px
 es decir 1rem == 16px.
 */
-
 
 /* Hack del rem */
 html {
@@ -34,5 +46,6 @@ body {
 }
 
 
-
+/* La especificidad es cuando los selectores compiten por aplicar un estilo cuando seleccionan al mismo elemento
+y modifican la misma propiedad. el que sea mas especifico sobreescribe el estilo del otro selector */
 
