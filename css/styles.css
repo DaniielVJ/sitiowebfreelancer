@@ -1,4 +1,3 @@
-
 /* 
 rem le dice al navegador el tamaño relativo de un elemento,
 y él calcula los píxeles según el dispositivo para mantener la proporción.
@@ -18,14 +17,22 @@ body {
     font-size: 16px;
 }
 
-/* Seleccionamos el elemento para  aplicar estilos */
-h1 {
-    /* Centra el texto en el ancho que ocupe el elemento html*/
+
+/* clases, seleccionan a todos los elementos que tengan esta clase y aplica el estilo a todos */
+.titulo {
+   /* Centra el texto en el ancho que ocupe el elemento html*/
     text-align: center;
     font-size: 3.8rem; /*3.8 x 10 = 38px*/
+
 }
 
-h1 span {
+
+/* Seleccionamos el elemento para  aplicar estilos */
+.titulo span {
+    /* Se aplican estos estilos a todos los elementos span que desciendan de un elemento que tenga asignada la class titulo */
     font-size: 2rem;
 }
+
+
+
 
