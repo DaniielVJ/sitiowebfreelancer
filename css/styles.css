@@ -1,0 +1,31 @@
+
+/* 
+rem le dice al navegador el tamaño relativo de un elemento,
+y él calcula los píxeles según el dispositivo para mantener la proporción.
+esta unidad de medida es relativa al elemento root (html) que por defecto son 16px
+es decir 1rem == 16px.
+*/
+
+
+/* Hack del rem */
+html {
+    /* reseteo-rem */
+    font-size:  62.5%;  /* 62.5% de 16px es igual a 10px, permite 10px == 1rem*/
+}
+
+body {
+    /* para que todas las fuentes que no usan rem, mantengan su tamaño por defecto */
+    font-size: 16px;
+}
+
+/* Seleccionamos el elemento para  aplicar estilos */
+h1 {
+    /* Centra el texto en el ancho que ocupe el elemento html*/
+    text-align: center;
+    font-size: 3.8rem; /*3.8 x 10 = 38px*/
+}
+
+h1 span {
+    font-size: 2rem;
+}
+
