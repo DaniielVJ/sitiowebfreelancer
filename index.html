@@ -30,20 +30,24 @@
         <!-- Este span se usa cuando queremos modificar una parte del contenido sin afectar a lo demas  -->
     </header>
 
-    <nav >
-        <!-- Menu de navegacion entre paginas html del sitio web -->
-        <a href="#">Inicio</a> <!--href, indicamos a que archivo o lugar mandaremos al usuario cuando haga click en el contenido-->
-        <a href="nosotros.html">Nosotros</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contacto</a>
-        <!-- Cuando se tienen multiples enlaces es bueno agruparlos en un nav -->
-    </nav>
-
+    <!-- Utily class, cuando usamos un div con una clase para aplicar un estilo a un componente -->
+    <div class="nav-bg">
+        <!-- Es para envolver a la navegacion y aplicarle un estilo a toda la navegacion -->
+        <nav class="navegacion-principal contenedor">
+            <!-- Menu de navegacion entre paginas html del sitio web -->
+            <a href="#">Inicio</a> <!--href, indicamos a que archivo o lugar mandaremos al usuario cuando haga click en el contenido-->
+            <a href="pages/nosotros.html">Nosotros</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+            <!-- Cuando se tienen multiples enlaces es bueno agruparlos en un nav -->
+        </nav>
+    </div>
+    
     <section>
         <!-- Seccion del sitio web -->
         <h2>Diseña y Desarrollo Web Freelancer</h2>
         <!-- Añadir una imagen en la pagina web -->
-        <img src="img/hero.jpg"/>
+        <!-- <img src="img/hero.jpg"/> -->
         <!-- Añadir Icono de Tabler icons, SVG no se distorsiona --> 
         <svg
             xmlns="http://www.w3.org/2000/svg"

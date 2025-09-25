@@ -53,3 +53,60 @@ body {
 /* La especificidad es cuando los selectores compiten por aplicar un estilo cuando seleccionan al mismo elemento
 y modifican la misma propiedad. el que sea mas especifico sobreescribe el estilo del otro selector */
 
+
+/* clase para centrar elementos */
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+/* utily first, una clase que aplica un unico estilo */
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+
+.navegacion-principal {
+    /* Display flex, es para alinear los elementos hijos dentro de el. (Como se mostraran) */
+    display: flex;
+    flex-direction: row; /*Por defecto se alinean en fila o horizontal*/
+    /* Alinea para que ocupen todo el espacio disponible en el nav horizontalmente */
+    justify-content: space-around;  /*space-between: mas separacion - space-around: mas juntitos*/
+   
+}
+
+
+.navegacion-principal a {
+   color: var(--blanco);
+   text-decoration: none;
+   font-weight: bold;
+   /* El padding a un hijo permite que las etiquetas padre se expandan junto con el */
+   padding: 1rem;
+    font-size: 2rem;
+}
+
+/* Añade estilos cuando el mouse se pasa por encima */
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+
+/* Media Queries, permiten añadir estilos segun el tamaño de la pantalla 
+max-width: dice que llegando a ese valor se aplican, pero si se pasa dejan de aplicarse
+min-width: dice que llegando a ese valor hacia arriba se aplican esos estilos
+
+valores tradicionales: 480px y 768px
+*/
+
+@media (min-width: 420px) {
+    /* Se aplican estos estilos si la pantalla llega a ese tamaño de pixeles o mas */
+    .navegacion-principal {
+       flex-direction: row;
+    }
+}
+
+
+@media (min-width: 768px){
+    
+}
