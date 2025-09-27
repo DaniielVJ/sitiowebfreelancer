@@ -22,3 +22,15 @@
         - .card{}, clase del bloque o contenedor de los elementos.
         - .card h2{}, seleccionamos el elemento html en especifico de .card al cual queremos dar estilo.
  
+
+ - Crear un snippet: CRTL + SHIFT + P, buscar snippets y crear un snippet para el lenguaje que deseemos
+    - 	"Crear media querie": {
+		"prefix": "mq", // letras con las cuales llamaremos al snippet desde el editor
+		"body": [ // Es el codigo que creara el snippet, los dolares indican donde se posicionara el puntero al principio con $1
+		// y cuando demos tab se posicionara en $2
+			"@media(min-width: $1){",
+			"    $2",
+			"}"
+		],
+		"desciption": "Permite definir la estructura del media queries"
+	}

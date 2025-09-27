@@ -77,11 +77,11 @@ y modifican la misma propiedad. el que sea mas especifico sobreescribe el estilo
 
 
 .navegacion-principal a {
-   color: var(--blanco);
-   text-decoration: none;
-   font-weight: bold;
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
    /* El padding a un hijo permite que las etiquetas padre se expandan junto con el */
-   padding: 1rem;
+    padding: 1rem;
     font-size: 2rem;
 }
 
@@ -99,14 +99,20 @@ min-width: dice que llegando a ese valor hacia arriba se aplican esos estilos
 valores tradicionales: 480px y 768px
 */
 
-@media (min-width: 420px) {
+@media (min-width: 480px) {
     /* Se aplican estos estilos si la pantalla llega a ese tamaño de pixeles o mas */
-    .navegacion-principal {
-       flex-direction: row;
+
+    /* Media queries se recomienda escribir los estilos que se van a cambiar segun el tamaño de la pantalla */
+    body {
+        background-color: blue;
     }
 }
 
 
+
+/* Minimo la pantalla del dispositivo sea de 768px hacia arriba se vera de esta forma la pagina web */
 @media (min-width: 768px){
-    
+    body {
+        background-color: cornflowerblue;
+    }
 }
